@@ -1,0 +1,177 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #21232a ;
+}
+
+/* html,
+body
+{
+    overflow: hidden;
+} */
+
+
+
+body
+{
+    overflow: hidden;
+}
+
+#logo{
+  position: absolute;
+  padding: 7px;
+}
+
+
+.titulo{
+  margin-top: 18px;
+}
+
+
+#main{
+  display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px; 
+
+width: 100%;
+min-height: 100vh;
+}
+
+
+
+
+.webgl
+{
+    
+    display: grid;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-height: 50vh;
+    
+    
+    /* height:100%;
+    width: 100%; */
+    /* outline: none; */
+}
+
+
+#conter{
+  grid-column: 1 / 5;
+  width: 100%;
+    height: 100%;
+}
+
+
+
+.slider {
+    margin-top: 5px;
+    z-index: 2;
+    
+    -webkit-appearance: none;
+    width: 100%;
+    height: 3px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 0.99;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #04AA6D;
+    cursor: pointer;
+    border-radius: 50%;
+    
+    
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: #04AA6D;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .slidecontainer{
+    background-color: #21232a;
+  }
+
+  #recuadro{
+    
+    display: block;
+   margin: auto;
+   padding: 20px;
+   padding-bottom: 50px;
+   padding-top: 30px;
+   margin-right: 200px;
+    width: 80%;
+
+    margin-top: 7vh;
+
+    background-color: #21232a ;
+    border-width:2px;
+    border-style:solid;
+    border-radius: 8px;
+    border-color: #d3d3d3
+  }
+
+
+
+
+  @media screen and (max-width: 960px) {
+    #main{
+      display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    
+    width: 100%;
+    min-height: 60vh;
+    }
+
+    #recuadro{
+    
+      display: block;
+     margin: auto;
+     padding: 20px;
+     padding-bottom: 30px;
+     padding-top: 20px;
+     
+      width: 80%;
+  
+      
+  
+      background-color: #21232a ;
+      border-width:2px;
+      border-style:solid;
+      border-radius: 8px;
+      border-color: #d3d3d3
+    }
+
+
+
+
+
+
+  }
+
+/*# sourceMappingURL=main.css.map*/
